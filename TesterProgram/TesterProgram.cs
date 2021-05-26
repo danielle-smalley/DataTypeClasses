@@ -24,6 +24,18 @@ namespace TesterProgram
             s2.StudentGpa = 2.0m;
             Console.WriteLine(s2);
 
+            Console.WriteLine("\n\n-----Vehicle Info-----\n\n");
+
+            Vehicle v1 = new Vehicle("Ford", "Escort", 2000, 2450);
+            Console.WriteLine(v1);
+
+            Vehicle v2 = new Vehicle();
+            v2.Make = "Kia";
+            v2.Model = "Forte";
+            v2.Year = 2015;
+            v2.Weight = 2800;
+            Console.WriteLine(v2);
+
         } //end main
     }//end class
 }//end namespace
