@@ -46,7 +46,7 @@ namespace TesterProgram
             l2.Password = "AnInstrument?";
             Console.WriteLine(l2);
 
-            Console.WriteLine("\n\n-----Login Info-----\n\n");
+            Console.WriteLine("\n\n-----Contact Info-----\n\n");
 
             ContactInfo c1 = new ContactInfo("1600 Pennsylvania Ave NW", "Washington", "DC", "20500", "877-777-7777", "steppinonthebeach@yahoo.com");
             Console.WriteLine(c1);
