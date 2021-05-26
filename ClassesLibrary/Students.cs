@@ -11,6 +11,8 @@ namespace ClassesLibrary
         //fields
         private string _firstName;
         private string _lastName;
+        private int _studentid;
+        private decimal _studentgpa;
 
 
         //properties
@@ -26,12 +28,25 @@ namespace ClassesLibrary
             set { _lastName = value; }
         }//end lastname
 
+        public int StudentId
+        { get { return _studentid; }
+            set { _studentid = value; }
+        }//end ID
+
+        public decimal StudentGpa
+        {
+            get { return _studentgpa; }
+            set { _studentgpa = value; }
+        }//end gpa
+
         //ctors
 
-        public Student(string firstName, string lastName)
+        public Student(string firstName, string lastName, int studentId, decimal studentGpa)
         {
             FirstName = firstName;
             LastName = lastName;
+            StudentId = studentId;
+            StudentGpa = studentGpa;
         }
 
         public Student()
@@ -43,7 +58,8 @@ namespace ClassesLibrary
 
         public override string ToString()
         {
-            return string.Format("First Name: {0}\t\tLast Name: {1}", FirstName, LastName);
+            return string.Format("First Name: {0}\tLast Name: {1}\n" +
+                "ID: {2}\tGPA: {3}", FirstName, LastName, StudentId, StudentGpa);
         }
 
     }//end class
