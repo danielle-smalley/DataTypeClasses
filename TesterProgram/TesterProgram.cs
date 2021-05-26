@@ -45,6 +45,7 @@ namespace TesterProgram
             l2.UserName = "isMayonnaise";
             l2.Password = "AnInstrument?";
             Console.WriteLine(l2);
+
         } //end main
     }//end class
 }//end namespace
