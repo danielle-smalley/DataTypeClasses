@@ -36,6 +36,15 @@ namespace TesterProgram
             v2.Weight = 2800;
             Console.WriteLine(v2);
 
+            Console.WriteLine("\n\n-----Login Info-----\n\n");
+
+            Login l1 = new Login("ssquarepants01", "G@ry");
+            Console.WriteLine(l1);
+
+            Login l2 = new Login();
+            l2.UserName = "isMayonnaise";
+            l2.Password = "AnInstrument?";
+            Console.WriteLine(l2);
         } //end main
     }//end class
 }//end namespace
