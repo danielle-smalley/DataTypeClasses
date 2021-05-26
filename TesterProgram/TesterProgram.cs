@@ -36,6 +36,8 @@ namespace TesterProgram
             v2.Weight = 2800;
             Console.WriteLine(v2);
 
+
+
         } //end main
     }//end class
 }//end namespace
