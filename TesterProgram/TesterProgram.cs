@@ -45,6 +45,21 @@ namespace TesterProgram
             l2.UserName = "isMayonnaise";
             l2.Password = "AnInstrument?";
             Console.WriteLine(l2);
+
+            Console.WriteLine("\n\n-----Login Info-----\n\n");
+
+            ContactInfo c1 = new ContactInfo("1600 Pennsylvania Ave NW", "Washington", "DC", "20500", "877-777-7777", "steppinonthebeach@yahoo.com");
+            Console.WriteLine(c1);
+
+            ContactInfo c2 = new ContactInfo();
+            c2.StreetAddress = "123 Derp Ave";
+            c2.City = "Underarock";
+            c2.State = "Florida";
+            c2.Zip = "32920";
+            c2.Phone = "800-123-4567";
+            c2.Email = "ismayoaninstrument@hotmail.com";
+            Console.WriteLine(c2);
+
         } //end main
     }//end class
 }//end namespace
