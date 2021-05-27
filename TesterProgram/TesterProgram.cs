@@ -87,6 +87,14 @@ namespace TesterProgram
 
             Console.WriteLine("\n\n-----Library-----\n\n");
 
+            List<Book> books = new List<Book>() { b1, b2 }; //this list of type Book has 2 books in it
+            Library lib1 = new Library(books, "Smalley Library", "123 Nowhere St", "Columbia", "MO", "65203");
+            Console.WriteLine(lib1);
+
+            Library lib2 = new Library(books, "Main St Library", "321 Main St", "North Pole", "AK", "99705");
+            Console.WriteLine(lib2);
+
+
 
 
         } //end main
