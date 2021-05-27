@@ -94,7 +94,15 @@ namespace TesterProgram
             Library lib2 = new Library(books, "Main St Library", "321 Main St", "North Pole", "AK", "99705");
             Console.WriteLine(lib2);
 
+            Console.WriteLine("\n\n-----Songs-----\n\n");
+            Song song1 = new Song("Lady Gaga", "Bad Romance", 300);
+            Console.WriteLine(song1);
 
+            Song song2 = new Song();
+            song2.Artist = "Jessie J";
+            song2.Title = "Masterpiece";
+            song2.LengthInSeconds = 221;
+            Console.WriteLine(song2);
 
 
         } //end main
