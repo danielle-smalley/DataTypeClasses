@@ -73,6 +73,9 @@ namespace TesterProgram
 
             Console.WriteLine("\n\n-----Credit Card Account-----\n\n");
 
+            CreditCardAccount acc1 = new CreditCardAccount(55554444, cust1, 200.00m, false, 18.99m);
+            Console.WriteLine(acc1);
+
 
         } //end main
     }//end class
