@@ -104,6 +104,8 @@ namespace TesterProgram
             song2.LengthInSeconds = 221;
             Console.WriteLine(song2);
 
+            Song song3 = new Song("The Weeknd", "In Your Eyes", 240);
+            Console.WriteLine(song3);
 
         } //end main
     }//end class
