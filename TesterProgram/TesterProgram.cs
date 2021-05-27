@@ -61,7 +61,7 @@ namespace TesterProgram
             c2.Email = "ismayoaninstrument@hotmail.com";
             Console.WriteLine(c2);
 
-            Console.WriteLine("\n\n-----Customers-----\n\n");
+            Console.WriteLine("\n\n-----Customer Info-----\n\n");
 
             Customer cust1 = new Customer("5566", "Sandy", "Cheeks", c1);
             Console.WriteLine(cust1);
@@ -72,7 +72,7 @@ namespace TesterProgram
             cust2.ContactInfo = c2;
             Console.WriteLine(cust2);
 
-            Console.WriteLine("\n\n-----Credit Card Account-----\n\n");
+            Console.WriteLine("\n\n-----Credit Card Account Info-----\n\n");
 
             CreditCardAccount acc1 = new CreditCardAccount(55554444, cust1, 200.00m, false, 18.99m);
             Console.WriteLine(acc1);
@@ -109,10 +109,16 @@ namespace TesterProgram
             Console.WriteLine(song3);
 
             Console.WriteLine("\n\n-----Artists-----\n\n");
-            List<Song> songs = new List<Song>() { song1, song2, song3 };
-            Artist a1 = new Artist(songs, "Alejandro", Genre.Pop);
+            List<Song> tracks = new List<Song>() { song1, song2, song3 };
+            Artist a1 = new Artist(tracks, "Alejandro", Genre.Pop);
             Console.WriteLine(a1);
 
+            //this isn't working correctly, songs are now blank
+            Artist a2 = new Artist();
+            a2.Tracks = tracks;
+            a2.Title = "Queen";
+            a2.Genre = Genre.RnB;
+            Console.WriteLine(a2);
             //Artist a2 = new Artist(songs, "Queen", Genre.RnB);
             //Console.WriteLine(a2);    **If I add one here, it will only display this one and not a1 too
 
@@ -126,6 +132,18 @@ namespace TesterProgram
             mh2.Weight = 13000;
             mh2.NumberOfBeds = 3;
             Console.WriteLine(mh2);
+
+            Console.WriteLine("\n\n-----Trucks-----\n\n");
+            Truck t1 = new Truck("Ford", "Ranger", 2020, 4400, 1800);
+            Console.WriteLine(t1);
+            Truck t2 = new Truck();
+            t2.Make = "GMC";
+            t2.Model = "Canyon Denali";
+            t2.Year = 2020;
+            t2.Weight = 4500;
+            t2.LoadCapacityLbs = 1500;
+            Console.WriteLine(t2);
+
         } //end main
     }//end class
 }//end namespace

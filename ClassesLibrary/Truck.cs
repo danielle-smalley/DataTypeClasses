@@ -24,7 +24,7 @@ namespace ClassesLibrary
         //methods
         public override string ToString()
         {
-            return base.ToString() + "\nLoad Capacity: " + LoadCapacityLbs + "pounds.";
+            return base.ToString() + "\nLoad Capacity: " + LoadCapacityLbs + " lbs\n";
         }
 
     }
