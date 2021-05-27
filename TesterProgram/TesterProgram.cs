@@ -84,7 +84,10 @@ namespace TesterProgram
             b2.Author = "Dr. Suess";
             b2.NbrOfPages = 22;
             Console.WriteLine(b2);
-            
+
+            Console.WriteLine("\n\n-----Library-----\n\n");
+
+
 
         } //end main
     }//end class
