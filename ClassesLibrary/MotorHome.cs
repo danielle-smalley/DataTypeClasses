@@ -20,12 +20,11 @@ namespace ClassesLibrary
         {
             NumberOfBeds = numberOfBeds;
         }
-        //methods
         public MotorHome()
         {
 
         }
-
+        //methods
         public override string ToString()
         {
             return base.ToString() + "\nNumber of Beds: " + NumberOfBeds + "\n";
