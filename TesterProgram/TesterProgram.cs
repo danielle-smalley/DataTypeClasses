@@ -60,6 +60,10 @@ namespace TesterProgram
             c2.Email = "ismayoaninstrument@hotmail.com";
             Console.WriteLine(c2);
 
+            Console.WriteLine("\n\n-----Customers-----\n\n");
+
+            Customer cust1 = new Customer("5566", "Sandy", "Cheeks", "email@gmail.com");
+
         } //end main
     }//end class
 }//end namespace

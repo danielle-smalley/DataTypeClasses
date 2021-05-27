@@ -26,7 +26,7 @@ namespace ClassesLibrary
         }
         
         //ctor
-        public Login(string userName, string password)
+        public Login(string userName, string password) //this is a method that allows us to create the new login object, so here we're passing in 2 parameters and assigning the value of those parameters to the properties. 
         {
             UserName = userName;
             Password = password;
