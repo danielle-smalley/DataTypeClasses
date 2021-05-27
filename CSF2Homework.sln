@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesterProgram", "TesterProg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesLibrary", "ClassesLibrary\ClassesLibrary.csproj", "{77F1D9FF-507A-44C1-B365-195904C1B499}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{994121C1-DC19-49A7-8509-F931BC491B63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{77F1D9FF-507A-44C1-B365-195904C1B499}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77F1D9FF-507A-44C1-B365-195904C1B499}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77F1D9FF-507A-44C1-B365-195904C1B499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{994121C1-DC19-49A7-8509-F931BC491B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{994121C1-DC19-49A7-8509-F931BC491B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{994121C1-DC19-49A7-8509-F931BC491B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{994121C1-DC19-49A7-8509-F931BC491B63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

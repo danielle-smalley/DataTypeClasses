@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClassesLibrary;
+using Enum;
 
 namespace TesterProgram
 {
@@ -106,6 +107,14 @@ namespace TesterProgram
 
             Song song3 = new Song("The Weeknd", "In Your Eyes", 240);
             Console.WriteLine(song3);
+
+            Console.WriteLine("\n\n-----Artists-----\n\n");
+            List<Song> songs = new List<Song>() { song1, song2, song3 };
+            Artist a1 = new Artist(songs, "Alejandro", Genre.Pop);
+            Console.WriteLine(a1);
+
+            //Artist a2 = new Artist(songs, "Queen", Genre.RnB);
+            //Console.WriteLine(a2);    **If I add one here, it will only display this one and not a1 too
 
         } //end main
     }//end class
