@@ -76,6 +76,15 @@ namespace TesterProgram
             CreditCardAccount acc1 = new CreditCardAccount(55554444, cust1, 200.00m, false, 18.99m);
             Console.WriteLine(acc1);
 
+            Console.WriteLine("\n\n-----Books-----\n\n");
+            Book b1 = new Book("Green Eggs & Ham", "Dr. Suess", 24);
+            Console.WriteLine(b1);
+            Book b2 = new Book();
+            b2.Title = "One Fish, Two Fish, Red Fish, Blue Fish";
+            b2.Author = "Dr. Suess";
+            b2.NbrOfPages = 22;
+            Console.WriteLine(b2);
+            
 
         } //end main
     }//end class
