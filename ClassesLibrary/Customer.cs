@@ -9,7 +9,7 @@ namespace ClassesLibrary
     public class Customer
     {
         //fields
-        //no fields needed
+        //NA
 
         //props
         public string CustomerId { get; set; }
@@ -24,6 +24,11 @@ namespace ClassesLibrary
             FirstName = firstName;
             LastName = lastName;
             ContactInfo = contactInfo;
+        }
+
+        public Customer()
+        {
+
         }
         //methods
 
