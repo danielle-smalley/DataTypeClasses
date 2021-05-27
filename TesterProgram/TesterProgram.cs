@@ -116,6 +116,16 @@ namespace TesterProgram
             //Artist a2 = new Artist(songs, "Queen", Genre.RnB);
             //Console.WriteLine(a2);    **If I add one here, it will only display this one and not a1 too
 
+            Console.WriteLine("\n\n-----MotorHomes-----\n\n");
+            MotorHome mh1 = new MotorHome("Fancy", "MotorHomeMobile", 2010, 10000, 2);
+            Console.WriteLine(mh1);
+            MotorHome mh2 = new MotorHome();
+            mh2.Make = "Snazzy";
+            mh2.Model = "Jazzy";
+            mh2.Year = 2020;
+            mh2.Weight = 13000;
+            mh2.NumberOfBeds = 3;
+            Console.WriteLine(mh2);
         } //end main
     }//end class
 }//end namespace
