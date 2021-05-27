@@ -62,15 +62,16 @@ namespace TesterProgram
 
             Console.WriteLine("\n\n-----Customers-----\n\n");
 
-            Customer cust1 = new Customer("5566", "Sandy", "Cheeks", "email@email.com");
+            Customer cust1 = new Customer("5566", "Sandy", "Cheeks", c1);
             Console.WriteLine(cust1);
             Customer cust2 = new Customer();
             cust2.CustomerId = "7777";
             cust2.FirstName = "Eugene";
             cust2.LastName = "Krabs";
-            cust2.ContactInfo = "mrkrabs@money.com";
-            Console.WriteLine(c2);
+            cust2.ContactInfo = c2;
+            Console.WriteLine(cust2);
 
+            Console.WriteLine("\n\n-----Credit Card Account-----\n\n");
 
 
         } //end main
