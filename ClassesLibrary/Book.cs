@@ -30,7 +30,7 @@ namespace ClassesLibrary
         //methods 
         public override string ToString()
         {
-            return string.Format("Title: {0}\n" +
+            return string.Format("\nTitle: {0}\n" +
                 "Author: {1}\n" +
                 "Length: {2} pages\n", Title, Author, NbrOfPages);
         }

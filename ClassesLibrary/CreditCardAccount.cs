@@ -35,11 +35,10 @@ namespace ClassesLibrary
         //methods
         public override string ToString()
         {
-            return string.Format("Account Number: {0}\n" +
-                "Customer Info: {1}\n" +
+            return string.Format("\nAccount Number: {0}\n" +
+                "Customer Info: {1}" +
                 "Balance: {2:c}\n" +
-                "Past Due? {3}\n" +
-                "Interest Rate: {4}%", AccountNumber, CustomerInfo, Balance, IsPastDue ? "Yes" : "No", AnnualInterestRate);
+                "Past Due? {3}\t\tInterest Rate: {4}%", AccountNumber, CustomerInfo, Balance, IsPastDue ? "Yes" : "No", AnnualInterestRate);
         }
 
     }//end class

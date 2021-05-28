@@ -77,6 +77,15 @@ namespace TesterProgram
             CreditCardAccount acc1 = new CreditCardAccount(55554444, cust1, 200.00m, false, 18.99m);
             Console.WriteLine(acc1);
 
+            CreditCardAccount acc2 = new CreditCardAccount();
+            acc2.AccountNumber = 666777894;
+            acc2.CustomerInfo = cust2;
+            acc2.Balance = 899.54m;
+            acc2.IsPastDue = true;
+            acc2.AnnualInterestRate = 16.99m;
+            Console.WriteLine(acc2);
+
+
             Console.WriteLine("\n\n-----Books-----\n\n");
             Book b1 = new Book("Green Eggs & Ham", "Dr. Suess", 24);
             Console.WriteLine(b1);
@@ -89,13 +98,20 @@ namespace TesterProgram
             Console.WriteLine("\n\n-----Library-----\n\n");
 
             List<Book> books = new List<Book>() { b1, b2 }; //this list of type Book has 2 books in it
+            Library lib2 = new Library();
+            lib2.Books = books;
+            lib2.LibraryName = "Test Library";
+            lib2.StreetAddress = "555 West St";
+            lib2.City = "Columbia";
+            lib2.State = "MO";
+            lib2.Zip = "65202";
+            Console.WriteLine(lib2);
+
             Library lib1 = new Library(books, "Smalley Library", "123 Nowhere St", "Columbia", "MO", "65203");
             Console.WriteLine(lib1);
 
-            Library lib2 = new Library(books, "Main St Library", "321 Main St", "North Pole", "AK", "99705");
-            Console.WriteLine(lib2);
-
             Console.WriteLine("\n\n-----Songs-----\n\n");
+
             Song song1 = new Song("Lady Gaga", "Bad Romance", 300);
             Console.WriteLine(song1);
 
@@ -113,14 +129,11 @@ namespace TesterProgram
             Artist a1 = new Artist(tracks, "Alejandro", Genre.Pop);
             Console.WriteLine(a1);
 
-            //this isn't working correctly, songs are now blank
             Artist a2 = new Artist();
             a2.Tracks = tracks;
             a2.Title = "Queen";
             a2.Genre = Genre.RnB;
             Console.WriteLine(a2);
-            //Artist a2 = new Artist(songs, "Queen", Genre.RnB);
-            //Console.WriteLine(a2);    **If I add one here, it will only display this one and not a1 too
 
             Console.WriteLine("\n\n-----MotorHomes-----\n\n");
             MotorHome mh1 = new MotorHome("Fancy", "MotorHomeMobile", 2010, 10000, 2);

@@ -34,7 +34,7 @@ namespace ClassesLibrary
             string songsNeeded = "";
             foreach (Song song in Tracks)
             {
-                songsNeeded += song + "\n";
+                songsNeeded += song.Title + "\n";
             }//end foreach
             return string.Format("Songs: \n{0}\n" +
                 "Title: {1}\n" +

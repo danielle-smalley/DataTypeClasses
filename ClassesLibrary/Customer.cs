@@ -34,8 +34,8 @@ namespace ClassesLibrary
 
         public override string ToString()
         {
-            return string.Format("Customer ID = {0}\t\tFirst Name: {1}\n" +
-                "Last Name: {2}\t\tContact Info: {3}", CustomerId, FirstName, LastName, ContactInfo);
+            return string.Format("Customer ID = {0}\nFirst Name: {1}\n" +
+                "Last Name: {2}\nContact Info: {3}\n", CustomerId, FirstName, LastName, ContactInfo);
         }
     }//end class
 }//end namespace
